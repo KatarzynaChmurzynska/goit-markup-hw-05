@@ -430,7 +430,7 @@ img {
 .page-footer-right {
   margin-left: 80px;
 }
-.form {
+.form-subscribe {
   width: 453px;
   height: 80px;
   display: flex;
@@ -438,7 +438,7 @@ img {
   gap: 24px;
 }
 
-input {
+.input-subscribe {
   font-family: inherit;
   line-height: inherit;
   border-radius: 4px;
@@ -452,7 +452,7 @@ input {
   padding-bottom: 8px;
   color: #fff;
 }
-.btn {
+.btn-subscribe {
   line-height: inherit;
   letter-spacing: 0.04em;
   text-align: center;
@@ -464,11 +464,104 @@ input {
   background-color: #4d5ae5;
 }
 
-input::placeholder {
+.form-subscribe::placeholder {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+}
+
+.modal {
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+}
+.btn-close {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  width: 360px;
+  height: 336px;
+}
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+.label-modal {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.checkbox-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.privacypolicy {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.send-btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+.input-modal {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  background: #fcfcfc;
+}
+.textarea-modal {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+  background: #fcfcfc;
+}
+.checkbox-input {
+  width: 360px;
+  height: 16px;
 }
