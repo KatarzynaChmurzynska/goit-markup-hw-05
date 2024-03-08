@@ -409,7 +409,7 @@ img {
   display: flex;
   align-items: baseline;
 }
-.footer-socialmedia {
+.footer-header {
   font-weight: 500;
   color: #fff;
   margin-bottom: 16px;
@@ -422,7 +422,53 @@ img {
 .page-footer-left {
   margin-right: 120px;
 }
-.page-footer-right .social-media-items .icons:hover,
-.page-footer-right .social-media-items .icons:focus {
+.page-footer-center .social-media-items .icons:hover,
+.page-footer-center .social-media-items .icons:focus {
   background-color: #31d0aa;
+}
+
+.page-footer-right {
+  margin-left: 80px;
+}
+.form {
+  width: 453px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+input {
+  font-family: inherit;
+  line-height: inherit;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background: #2e2f42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #fff;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #fff;
+}
+.btn {
+  line-height: inherit;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  color: #fff;
+  background-color: #4d5ae5;
+}
+
+input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
