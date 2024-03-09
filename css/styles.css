@@ -489,6 +489,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(46, 47, 66, 0.4);
 }
 
 .modal {
@@ -506,11 +507,27 @@ img {
 .btn-close {
   width: 24px;
   height: 24px;
-  border-radius: 100%;
   position: absolute;
   top: 24px;
   right: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
 }
+.btn-close:hover {
+  background-color: #404bbf;
+  border: none;
+}
+
+.btn-close:hover .close-icon {
+  fill: #fff;
+}
+
 fieldset {
   display: flex;
   flex-direction: column;
@@ -529,9 +546,10 @@ fieldset {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  /* padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px; */
+  margin-bottom: 16px;
+}
+.modal {
+  padding: 72px 24px 24px 24px;
 }
 .form-modal {
   display: flex;
