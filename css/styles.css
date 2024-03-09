@@ -597,6 +597,9 @@ img {
 .input-modal:focus {
   border-color: #4d5ae5;
 }
+.input-modal:focus + .modal-icon {
+  fill: #4d5ae5;
+}
 
 .modal-icon {
   position: absolute;
