@@ -437,33 +437,43 @@ img {
   flex-direction: row;
   gap: 24px;
 }
-
+.label-subscribe {
+}
 .input-subscribe {
   font-family: inherit;
   line-height: inherit;
   border-radius: 4px;
   width: 264px;
   height: 40px;
-  background: #2e2f42;
+  background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: 1px solid #fff;
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
   color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 .btn-subscribe {
   line-height: inherit;
   letter-spacing: 0.04em;
-  text-align: center;
+  font-weight: 500;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   color: #fff;
   background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
 }
-
+.send-icon {
+  margin-left: 16px;
+}
 .form-subscribe::placeholder {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
