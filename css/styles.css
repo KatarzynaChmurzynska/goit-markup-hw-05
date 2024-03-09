@@ -468,6 +468,7 @@ img {
   background-color: #4d5ae5;
   display: flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
   border: none;
 }
@@ -482,10 +483,21 @@ img {
   letter-spacing: 0.04em;
   color: #fff;
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -495,6 +507,9 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 100%;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 fieldset {
   display: flex;
@@ -514,6 +529,9 @@ fieldset {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  /* padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px; */
 }
 .form-modal {
   display: flex;
