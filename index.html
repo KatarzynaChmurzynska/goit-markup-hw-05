@@ -514,7 +514,7 @@
               </svg>
             </div>
           </div>
-          <div class="fieldset">
+          <div class="textarea-container">
             <label class="label-modal" for="user-comment">Comment</label>
             <textarea
               class="textarea-modal"
@@ -524,17 +524,19 @@
               id="user-comment"
             ></textarea>
           </div>
-
-          <label class="checkbox-label">
+          <div class="checkbox-container">
             <input
-              class="checkbox-input"
+              class="visually-hidden-checkbox"
               type="checkbox"
-              name="privacypolicy"
-              value="privacypolicy"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
             />
-            I accept the terms and conditions of the
-            <span class="privacypolicy">Privacy Policy</span>
-          </label>
+            <label class="checkbox-label" for="user-privacy">
+              I accept the terms and conditions of the
+              <span class="privacypolicy">Privacy Policy</span>
+            </label>
+          </div>
 
           <button class="send-btn">Send</button>
         </form>
