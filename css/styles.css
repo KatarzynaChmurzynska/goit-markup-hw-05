@@ -437,8 +437,7 @@ img {
   flex-direction: row;
   gap: 24px;
 }
-.label-subscribe {
-}
+
 .input-subscribe {
   font-family: inherit;
   line-height: inherit;
